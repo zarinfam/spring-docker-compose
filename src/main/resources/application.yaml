@@ -5,7 +5,7 @@ spring:
     compose:
       file:
         - "compose-postgres.yml"
-        - "compose.redis.yml"
+        - "compose-redis.yml"
   sql:
     init:
       mode: always
