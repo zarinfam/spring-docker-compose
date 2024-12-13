@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  employee-redis:
+    image: redis:latest
+    container_name: "employee-redis"
+    ports:
+      - "6379:6379"

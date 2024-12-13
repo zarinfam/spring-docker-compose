@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: employee-service
+  docker:
+    compose:
+      file:
+        - "compose-postgres.yml"
+        - "compose.redis.yml"
+  sql:
+    init:
+      mode: always
+  datasource:
+    username: saeed
+    password: p@ssw0rd
+    url: jdbc:postgresql://localhost:5432/employee
+  cache:
+    type: redis
+  data:
+    redis:
+      host: localhost
+      port: 6379
+server:
+  port: 8080
